@@ -18,18 +18,19 @@ body {
     background-image: url("assets/images/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1500px, 100vw);
+    background-size: max(1700px, 100vw);
     height: 92vh;
     position: relative;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .main {
         background-image: url("assets/images/bg.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: max(1500px, 100vw);
-        height: 55vh;
+        height: 72vh;
         position: relative;
+        /* padding: 0; */
     }
 }
 
@@ -40,6 +41,17 @@ body {
     background-color: black;
     top: 0;
     position: absolute;
+}
+
+@media only screen and (max-width: 600px){
+    .main .box {
+        height: 72vh;
+        width: 100%;
+        opacity: 0.79;
+        background-color: black;
+        top: 0;
+        position: absolute;
+    }
 }
 
 nav {
@@ -53,7 +65,7 @@ nav {
 
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     nav {
         /* background-color: rgb(244, 191, 191); */
         max-width: 88vw;
@@ -73,7 +85,7 @@ nav img {
     position: relative;
     z-index: 10;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     nav img {
         filter: brightness(90%);
         margin-top: 30px;
@@ -116,6 +128,20 @@ nav div select {
     font-weight: 800;
 }
 
+@media only screen and (max-width: 600px){
+    nav div select {
+        position: relative;
+        z-index: 10;
+        border: 1px solid gray;
+        color: rgb(240, 240, 240);
+        background-color: rgba(128, 128, 128, 0.199);
+        border-radius: 6px;
+        padding: 0.1rem 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 800;
+    }
+}
+
 .hero {
     font-family: 'Martel Sans', sans-serif;
     height: 100%;
@@ -139,7 +165,7 @@ nav div select {
     line-height: 12vh;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .firtext {
         font-family: 'Poppins', sans-serif;
         font-weight: bold;
@@ -159,7 +185,7 @@ nav div select {
     line-height: 0.2vh;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .sectext {
         font-family: 'Martel Sans', sans-serif;
         font-weight: 900;
@@ -177,7 +203,7 @@ nav div select {
     margin-top: 3vh;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .thitext {
         font-size: 0.8rempx;
         font-weight: 400;
@@ -199,7 +225,7 @@ nav div select {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .input {
         border: 1px solid gray;
         padding:  2px 2px;
@@ -236,7 +262,7 @@ nav div select {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .gs {
         border: none;
         padding: 8px;
@@ -266,6 +292,15 @@ nav div select {
     margin-top: 11vh;
 }
 
+@media only screen and (max-width: 600px){
+    .boxt {
+        color: white;
+        margin-left: 11vw;
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 10vh;
+    }
+}
 
 .parabox {
     /* border: 2px solid red; */
@@ -287,7 +322,7 @@ nav div select {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .parabox {
         /* border: 2px solid red; */
         /* position: absolute; */
@@ -302,7 +337,7 @@ nav div select {
         height: 55vh;
         justify-content: flex-start;
         flex-direction: column;
-        border-radius: 10px;
+        border-radius: 5px;
         position: relative;
         overflow: hidden;
     }
@@ -323,15 +358,15 @@ nav div select {
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .parabox::after {
         content: "";
         position: absolute;
-        top: 50%;
-        left: 30%;
+        top: 20%;
+        left: 28%;
         /* right: 0%; */
         bottom: 0%;
-        width: 70vw;
+        width: 100vw;
         background: url('https://assets.nflxext.com/ffe/siteui/acquisition/nmhp/games-banner-image-cropped.png') center/cover no-repeat;
         border-radius: 0px 10px 10px 0px;
         background-position: right;
@@ -352,15 +387,15 @@ nav div select {
     line-height: 50px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .p1 {
         color: white;
-        margin-left: 1vw;
+        margin-left: 3vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2rem;
-        width: 20rem;
+        font-size: 1.5rem;
+        width: 15rem;
         font-weight: bolder;
         margin-top: 2vh;
         line-height: 50px;
@@ -379,7 +414,7 @@ nav div select {
     opacity: 0.65;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .p2 {
         font-family: sans-serif;
         color: white;
@@ -387,7 +422,7 @@ nav div select {
         font-size: 1rem;
         font-weight: lighter;
         margin-top: 1vh;
-        width: 20rem;
+        width: 8rem;
         line-height: 20px;
         opacity: 0.65;
     }
@@ -407,7 +442,7 @@ nav div select {
     gap: 10px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .container{
         color: white;
         margin-left: 12vw;
@@ -426,11 +461,11 @@ nav div select {
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .conbox{
         background:linear-gradient(125deg, #001a55, #2b004b );
         width: 70vw;
-        height: 40vh;
+        height: 50vh;
         border-radius: 20px;
     
     }
@@ -476,7 +511,19 @@ nav div select {
     margin-left: 20px;
     font-size: 25px;
 }
-
+@media only screen and (max-width: 600px){
+    .fatext{
+        display: flex;
+        /* justify-content: center; */
+        justify-content: space-between;
+        align-items: center;
+        color: #fdfdfd;
+        padding-top: 7%;
+        margin-left: 20px;
+        margin-top: 2vh;
+        font-size: 15px;
+    }
+}
 .fabox:hover{
    background-color: rgb(114, 114, 114);
 }
@@ -502,16 +549,16 @@ nav div select {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .linput{
         border: 1px solid gray;
-        padding: 0.6rem 3rem;
-        margin-left: 35px;
+        padding: 0.6rem 1rem;
+        margin-left: 30px;
         opacity: 0.5;
         margin-top: 18px;
         background-color: rgb(24, 24, 24);
         color: rgb(211, 210, 210);
-        border-radius: 5px;
+        border-radius: 3px;
         align-items: center;
         font-size: 20px;
     }
@@ -529,10 +576,10 @@ nav div select {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .lgs{
         border: none;
-        padding: 0.3rem 2rem;
+        padding: 0.2rem 1rem;
         background-color: rgb(255, 0, 0);
         border-radius: 3px;
         color: white;
@@ -576,9 +623,10 @@ nav div select {
     flex-wrap: wrap;
     opacity: 0.56;
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 600px){
     .links{
-        height: 25vh;
+        /* border: 3px solid pink; */
+        height: 45vh;
         display: flex;
         justify-items:flex-start;
         /* align-items: center; */
@@ -591,6 +639,7 @@ nav div select {
         flex-direction: column;
         flex-wrap: wrap;
         opacity: 0.56;
+        width: 95vw;
     }
 }
 .links> a{
